@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Ex011</title>
+</head>
+<body>
+   <h1>Capítulo 11</h1>
+   <h2>Imagens flexível</h2>
+   <p>Tente abrir este site em vários dispositivos diferentes ou apenas aumente e diminua o tamanho do seu navegador.</p>
+   <picture>
+      <source media="(max-width: 750px)" srcset="image/foto-p.png" type="image/png">
+      <source media="(max-width: 1050px)" srcset="image/foto-m.png" type="image/png">
+      <img src="image/foto-g.png" alt="A imagem flexível funciona!">
+   </picture>
+
+   <h2>Áudio no HTML5</h2>
+   <audio src="midia/happy-mistake.mp3" controls preload="metadata"></audio>
+   <audio preload="metadata" loop autoplay controls>
+      <source src="midia/guanacast-33.mp3" type="audio/mpeg">
+      <source src="midia/happy-mistake.mp3" type="audio/mpeg">
+      <p>Seu navegador não tem suporte para áudio, realize o download clicando <a href="midia/guanacast-33.mp3" download="midia/guanacast-33.mp3" type="audio/mpeg">Aqui.</a></p>
+   </audio>
+
+   <h2>Vídeo no HTML5</h2>
+   <p>Este vídeo está hospedado no meu próprio site.</p>
+   <video width="600" poster="image/limoes-capa.png" controls autoplay>
+      <source src="midia/meu-video.mp4" type="video/mp4">
+      <source src="midia/meu-video.m4v" type="video/m4v">
+      <p>Seu navegador não tem suporte a nenhum tipo de vídeo.</p>
+   </video>
+   <h2>Incorporar vídeo do Youtube</h2>
+   <p>Este site está hospetado em sites externos</p>
+   <iframe width="560" height="315" src="https://www.youtube.com/embed/QN92lRPK2tM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</body>
+</html>

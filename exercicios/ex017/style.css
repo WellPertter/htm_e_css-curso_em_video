@@ -1,0 +1,18 @@
+@charset "UTF-8";
+/* É uma regra */
+
+body {
+   font-family: serif;
+   font-size: 20px;
+   background-color: gold;
+}
+h1 {
+   color: maroon;
+   background-color: darkgoldenrod;
+}
+h2 {
+   color: darkred;
+}
+p {
+   text-align: justify;
+}
