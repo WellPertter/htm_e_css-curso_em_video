@@ -1,0 +1,34 @@
+@charset "UTF-8";
+/*
+id = # (Só pode um elemento)
+class = (Várias classes)
+*/
+body{
+   background-color: #4BF584;
+   font-family: Arial, Helvetica, sans-serif;
+}
+h1{
+   color: #24753F;
+}
+h2{
+   color: #11361D;
+   
+}
+h1#principal{
+   text-align: center;
+   background-color: green;
+   color: white;
+}
+h2.basico{
+   color: #24753F;
+   font-weight: bold;
+}
+.intermediario{
+   color: #ded33b;
+}
+.avancado{
+   color: #d61818;
+}
+.destaque{
+   background-color: yellow;
+}
