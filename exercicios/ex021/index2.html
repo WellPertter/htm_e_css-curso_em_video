@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Grouping tags</title>
+   <style>
+      body{
+         font-family: Arial, Helvetica, sans-serif;
+         background-color: brown;
+         width: 600px;
+         margin: auto;
+      }
+      header{
+         margin: auto;
+         background-color: aqua;
+         border-radius: 10px;
+      }
+      header > h1{
+         text-align: center;
+      }
+      main{
+         margin: auto;
+         text-align: center;
+         background-color: burlywood;
+         border-radius: 10px 20px;
+         box-shadow: 2px 2px 1px black;
+      }
+      footer{
+         text-align: center;
+         background-color: black;
+         color: aliceblue;
+         padding: 20px 0px;
+         margin: auto;
+      }
+      nav > a{
+         text-decoration: none;
+         background-color: darkgreen;
+         color: red;
+         padding-right: 30px;
+      }
+      nav > a:hover{
+         text-decoration: underline;
+         color: aqua;
+      }
+      footer > p{
+         padding: 0;
+         margin: 0;
+      }
+      div#bola{
+         margin: auto;
+         height: 188px;
+         width: 188px;
+         border-radius: 50%;
+         background-color: white;
+      }
+   </style>
+</head>
+<body>
+   <!--
+      Antes (Não semântico):
+   <div id="cabecalho">
+      <div id="navegacao"></div>
+   </div>
+   <div id="artigo">
+      <div id="rodape">
+      </div>
+   </div>
+   <div id="rodape"></div>
+
+   Pode ser usado, mas não é recomendado, pois é bom usar as tags semânticas, ajuda os buscadores.
+   -->
+   <header>
+      <h1>Meu site</h1>
+      <nav>
+         <a href="#"> link </a>
+         <a href="#"> link </a>
+         <a href="#"> link </a>
+         <a href="#"> link </a>
+      </nav>
+   </header>
+   <main>
+      <!--O navegador darar prioridade para o main -->
+      <section id="assuntos">
+
+      </section>
+      <section id="noticias">
+         <article>
+            <h2>Notícias sobre o brasil</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere eveniet accusamus fugiat repudiandae, explicabo aspernatur delectus dignissimos porro eos nesciunt. Laborum quasi debitis cum explicabo vero a accusantium adipisci quis.</p>
+            <aside>
+               <p>Artigo escrito por José da silva.</p>
+            </aside>
+         </article>
+         <article>
+
+         </article>
+      </section>
+
+   </main>
+   <footer>
+      <p>Desenvolvido pelo curso em vídeo</p>
+   </footer>
+   <div id="bola">
+
+   </div>
+</body>
+</html>
