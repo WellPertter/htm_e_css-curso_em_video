@@ -1,0 +1,158 @@
+@charset "UTF-8";
+/*Adiconando uma fonte baixado.*/
+@font-face{
+   font-family: IDroid;
+   src: url('../fontes/idroid.otf') format('opentype');
+}
+/*Modificações gerais para o código.*/
+*{
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+}
+body{
+   font-family: Arial, Helvetica, sans-serif;
+   background-color: #84E1AD;
+}
+/*Cabeçalho do site*/
+header{
+   text-align: center;
+   background-image: linear-gradient(to bottom, #3CD882, #1A5C38);
+   color: #FFFFFF;
+   padding: 10px;
+   box-shadow: 0px 1px 5px #141414;
+}
+nav{
+   text-align: left;
+}
+header > p{
+   margin: auto;
+   width: 430px;
+   padding: 10px;
+   text-indent: 0;
+}
+header > h1{
+   font-family: Arial, sans-serif;
+   letter-spacing: -4px;
+   font-weight: 500;
+   color: #FFFFFF;
+   text-transform: uppercase;
+}
+/*Clases referentes aos links*/
+.link-header{
+   color: #FFFFFF;
+   text-decoration: none;
+   padding: 5px 10px;
+   border-radius: 3px;
+}
+.link-header:hover{
+   background-color: #1A5C38;
+}
+.link-main-1 {
+   color: #2FA866;
+   text-decoration: none;
+   font-weight: bold;
+}
+.link-main-1:hover {
+   color: #1A5C38;  
+}
+.link-main-2::after{
+   content: ' 🔗';
+}
+.link-main-3{
+   color: #141414;
+}
+.link-main-3:hover{
+   color: #1A5C38;
+}
+/*Centralizar elemento(Usado para centralizar as img)*/
+.centralizar{
+   display: block;
+   margin: auto;
+}
+/*Ocupar toda a largura(Usado para centralizar o iframe)*/
+.completo{
+   width: 840px;
+   height: 460px;
+   padding: 20px 30px;
+   background-color: #1A5C38;
+}
+/*Corpo principal do site, conteúdo main.*/
+main{
+   width: 840px;
+   margin: auto;
+   background-color: #FFFFFF;
+   text-align: justify;
+   margin-bottom: 20px;
+   border-radius: 0 0 8px 8px;
+   box-shadow: 0px 1px 5px 1px #141414;
+}
+p {
+   padding: 10px 20px;
+   text-indent: 20px;
+}
+h1, h2{
+   font-family: IDroid, sans-serif;
+   padding: 10px 20px;
+   color: #1F613D;
+}
+h2{
+   background-image: linear-gradient(to right, #CCECDB, #ffff);
+   margin: 10px 20px;
+   padding: 0;
+}
+/*Modificações referentes ao conteúdo EXTRA.*/
+.extra{
+   margin: 20px;
+   background-color: #C5EBD6;
+   border-radius: 10px;
+}
+.extra > h3{
+   border-radius: 10px 10px 0 0 ;
+   padding: 10px;
+   background-color: #2FA866;
+   color: #FFFFFF;
+}
+.extra > p {
+   padding: 15px 10px;
+}
+ul{
+   list-style-type: symbols(cyclic "✔");
+   display: inline-block;
+}
+.lista-1{
+   margin-left: 20px;
+   width: 420px;
+}
+/*Rodapé do site*/
+footer{
+   box-shadow: 0 -1px 1px #141414;
+   background-color: #1A5C38;
+   color: #FFFFFF;
+   text-align: center;
+}
+/*Respansividade, feita para 3 dispositivos(Computador, tablet, celular).*/
+@media screen and (max-width: 860px){
+   main{ 
+      width: 600px;
+   }
+   .completo{
+      width: 600px;
+      height: 360px;
+   }
+   .lista-1{
+      width: 320px;
+   }
+}
+@media screen and (max-width: 625px){
+   main{ 
+      width: 435px;
+   }
+   .completo{
+      width: 435px;
+      height: 280px;
+   }
+   .lista-1{
+      width: 210px;
+   }
+}
