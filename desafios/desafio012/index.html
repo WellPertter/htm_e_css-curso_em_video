@@ -21,25 +21,22 @@
          font-size: 1em;
          font-family: Verdana, Geneva, Tahoma, sans-serif;
       }
+
       header{
-         font-weight: bold;
          background-color: black;
          color: white;
          padding: 40px 0;
          text-align: center;
       }
-      
       header h1{
+         font-weight: bold;
          padding: 10px;
          font-variant: small-caps;
          font-size: 10vw;
          text-transform: capitalize;
          font-family: 'Passion One', cursive;
       }
-      header p{
-         font-family: Verdana, Geneva, Tahoma, sans-serif;
-         font-weight: normal;
-      }
+
       main p{
          font-size: 3vw;
          font-family:'Sriracha', cursive;
@@ -49,6 +46,7 @@
          line-height: 6vw;
 
       }
+
       section{
          background-color: white;
          padding: 5vw 3vw;
@@ -62,31 +60,25 @@
       a:hover{
          text-decoration: underline;
       }
-      #parallax-1{
+
+      #img-um {
          background-image: url(imagens/background001.jpg);
-         background-size: cover;
-         background-repeat: no-repeat;
-         background-attachment: fixed;
-         color: white;
       }
-      #parallax-1 p{
-         
-         background-color: rgb(0, 0, 0, 0.5);
-         color: white;
-      }
-      #parallax-2{
+      #img-dois {
          background-image: url(imagens/background002.jpg);
+      }
+
+      .parallax{ 
          background-size: cover;
          background-repeat: no-repeat;
          background-attachment: fixed;
       }
-      #parallax-2 p{
+      .parallax p{
          background-color: rgb(0, 0, 0, 0.5);
-         color: white; 
+         color: white;
       }
+
       footer{
-         font-family: Verdana, Geneva, Tahoma, sans-serif;
-         font-size: 1em;
          text-align: center;
          padding: 10px 0;
          background-color: black;
@@ -110,7 +102,7 @@
             Vou dizer tudo em poesia.<br>
          </p>
       </section>
-      <section id="parallax-1">
+      <section id="img-um" class="parallax">
          <p>Não é mais como era antes<br>
             É tudo abreviado<br>
             "Você" só tem duas letras<br>
@@ -129,23 +121,25 @@
             Se o saite é muito bom<br>
             Ele vale um alto preço.
          </p>
-         <p><br>Pra piorar a liguagem<br>
+      </section>
+      <section>
+         <p>Pra piorar a liguagem<br>
             O emoticom é um risco<br>
             Tem símbolo para tudo<br>
             Ponto e vírgula e um asterisco<br>
             Um beijo significa<br>
             Pra entender como fica<br>
-            Decifre esse rabisco.<br>
+            Decifre esse rabisco.
          </p>
       </section>
-      <section id="parallax-2">
+      <section id="img-dois" class="parallax">
          <p>Tenho saudade das cartas<br>
             Escritas com a própria mão<br>
             Mandava no mês de Junho<br>
             Só chegava no Verão<br>
             Mas matava a saudade<br>
             Era texto de verdade<br>
-            Nas linhas do coração.<br>
+            Nas linhas do coração.
          </p>
       </section>
       <section>
@@ -156,16 +150,18 @@
             A pessoa foi embora<br>
             Abriu outro aplicativo<br>
             O mundo ficou cativo<br>
-            Da tecnologia do agora.<br>
+            Da tecnologia do agora.
          </p>
+      </section>
+      <section>
          <p>
-            <br>Felizmente, pra orar<br>
+            Felizmente, pra orar<br>
             Não precisa de internet<br>
             Deus escuta todo mundo<br>
             Se quiser, faça esse teste<br>
             Dois pontos são dois joelhos<br>
             Seus lábios são aparelhos<br>
-            Deixe que Deus interprete.<br>
+            Deixe que Deus interprete.
          </p>
       </section>
    </main>
