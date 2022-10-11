@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Uso de Iframe</title>
+   <style>
+      body{
+         font-family: sans-serif;
+      }
+      iframe#tela{
+         width: 95vh;
+         height: 400px;
+         border: 2px solid black;
+      }
+   </style>
+</head>
+<body>
+   <h1>Faça uma escolha</h1>
+   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus tenetur fugit debitis esse quod aut excepturi molestiae dolore error? Placeat iusto expedita consectetur necessitatibus dolore, cum corrupti dolores accusamus tempora?</p>
+
+   <ul>
+      <li><a href="index.html" target="frame">Primeira página</a></li>
+      <li><a href="iframe.html" target="frame">Segunda página</a></li>
+      <li><a href="paginas-extras/segunda-pagina.html" target="frame">Terceira página</a></li>
+   </ul>
+
+
+   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus tenetur fugit debitis esse quod aut excepturi molestiae dolore error? Placeat iusto expedita consectetur necessitatibus dolore, cum corrupti dolores accusamus tempora?</p>
+   
+   <iframe id="tela" name="frame" srcdoc="<h1>Escolha uma opção</h1> <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus, perspiciatis. Minus, iusto doloremque voluptas nobis neque dolorem nulla quae autem eaque repellendus ullam fugiat dolore deleniti ipsum culpa praesentium molestiae?</p> <img src='imagens/lsd-anjo.png'>">
+      <p>Infelizmente seu navegador não é compatível.</p>
+   </iframe>
+
+   <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos magni rem quisquam inventore saepe alias omnis maxime! Harum, odit, veniam rem a natus omnis quis quos repellendus vero unde tempore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem voluptatibus molestiae quia. Quo optio eaque iste recusandae voluptates voluptate suscipit neque deleniti nesciunt, maiores dolores reprehenderit laudantium ducimus minus maxime?</p>
+</body>
+</html>
