@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Exemplo de tabela completa</title>
+   <style>
+      table{
+         width: 450px;
+         height: 350px;
+         border-collapse: collapse;
+      }
+      td, th{
+         text-align: center;
+         border: 2px solid black;
+      }
+   </style>
+</head>
+<body>
+   <table>
+      <thead>
+         <tr>
+            <th scope="col">Grupo</th>
+            <th scope="col">Nomes</th>
+            <th scope="colgroup" colspan="3">Filmes</th>
+         </tr>
+      </thead>
+      <tbody>
+         <tr>
+            <th rowspan="3" scope="rowgroup">Mulheres</th>
+            <td>Alexias Rodrigues</td>
+            <td>Barbie</td>
+            <td>Srek</td>
+            <td>Piratas do caribe</td>
+         </tr>
+         <tr>
+            <td>Carla Miranda</td>
+            <td>hulk</td>
+            <td>Carros 3</td>
+            <td>Matrix 5</td>
+         </tr>
+         <tr>
+            <td>Pamela</td>
+            <td>Cactos</td>
+            <td>Aviões</td>
+            <td>Transforme</td>
+         </tr>
+         <tr>
+            <th rowspan="3" scope="rowgroup">Homens</th>
+            <td>ARTHUR</td>
+            <td>Mario</td>
+            <td>Toy Store</td>
+            <td>Interestelar</td>
+         </tr>
+         <tr>
+            <td>Carlos</td>
+            <td>pica pau</td>
+            <td>bob esponja</td>
+            <td>carros</td>
+         </tr>
+         <tr>
+            <td>Pedro</td>
+            <td>paz</td>
+            <td>hulk 2</td>
+            <td>thor</td>
+         </tr>
+      </tbody>
+      <tfoot>
+         <tr>
+            <th colspan="4" scope="row">Total</th>
+            <td>1000</td>
+         </tr>
+      </tfoot>
+   </table>
+</body>
+</html>
