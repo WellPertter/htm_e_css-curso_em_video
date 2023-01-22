@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+/*---IMPRESSORA----*/
+
+*{
+   margin: 10px;
+   padding: 10px;
+   font-family: 'Courier New', Courier, monospace;
+   font-size: 1.5em;
+   line-height: 1.5em;
+}
+
+menu {
+   display: none;
+}
+article::after{
+   content: "Este artigo foi impresso através do site www.estudos.com.br"
+}
+article{
+   width: 100%;
+}
